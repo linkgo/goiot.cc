@@ -1,0 +1,53 @@
+@import 'custom.less';
+
+@content: content2;
+.@{content} {
+  & > h1, & > p {
+    text-align: center;
+    position: relative;
+    top: 15%;
+  }
+  & > ul {
+    position: relative;
+    top: 20%;
+    & > li {
+      // display: inline-block;
+      width: 33.33%;
+      padding: 6% 5% 0;
+      vertical-align: top;
+      position: absolute;
+      & .img {
+        display: inline-block;
+        width: 15%;
+        vertical-align: top;
+      }
+      & .text {
+        width: 85%;
+        display: inline-block;
+        padding-left: 8%;
+      }
+    }
+  }
+}
+@media (max-width: 750px){
+  .@{content}{
+    & > h1{
+      top: 5%;
+    }
+    & > p{
+      top: 3%;
+    }
+    & > ul{
+      padding: 15px;
+      top: 3%;
+      li {
+        position: static;
+        width: 50%;
+        padding: 0;
+        display: inline-block;
+        padding: 5px;
+      }
+    }
+  }
+}
+
