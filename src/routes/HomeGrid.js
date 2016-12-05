@@ -4,6 +4,10 @@ import { connect } from 'dva';
 import '../less/common.less';
 import Nav from '../components/home-grid/Nav';
 import Banner from '../components/home-grid/Banner';
+import Content5 from '../components/home-grid/Content5';
+import Content2 from '../components/home-grid/Content2';
+import Content4 from '../components/home-grid/Content4';
+import Footer from '../components/home-grid/Footer';
 
 
 function homeGrid(props){
@@ -13,6 +17,10 @@ function homeGrid(props){
 		<div className="page-wrap" style={{ width: '100%', height: '100%'}}>
 			<Nav { ...nav_1 } />
 			<Banner { ...banner_0 } />
+			<Content5 { ...content_5 } />
+			<Content2 { ...content_2 } />
+			<Content4 { ...content_4 } />
+			<Footer { ...footer_1 } />
 		</div>
 	)
 }

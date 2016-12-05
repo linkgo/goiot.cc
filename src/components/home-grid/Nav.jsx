@@ -5,6 +5,8 @@ import TweenOne from 'rc-tween-one';
 import styles from './Nav.less';
 const Item = Menu.Item;
 
+let logoSrc = require('../../img/goiot-rc3-132x33.white.png')
+
 // class Nav extends Component {
 
 // 	render(){
@@ -31,7 +33,7 @@ function Nav(props){
 	    		className="logo-wrap"
 	    		animation={animation} 
 	    	>
-	    		<img className="logo" src={logo} />
+	    		<img className="logo" src={ logo } />
 	    	</TweenOne>
 	    </Col>
 	    <Col xs={{ span: 24 }} sm={{ span: 12, offset: 5 }}>

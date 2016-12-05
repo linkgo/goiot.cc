@@ -1,0 +1,62 @@
+@import '../../less/custom.less';
+
+.content4-wrap{width: 100%; height: 100%;
+	h1{font-size: 32px; font-weight: normal; color: #404040;}
+	.content4-title{
+		h1{text-align: center; margin: 5% auto 2%;}
+		p{text-align: center;}
+	}
+	.content4-list-wrapper {
+    border-radius: 6px;
+    width: 95%;
+    position: relative;
+    margin: 10% auto;
+    &:before, &:after{content: ''; display: table; height: 0; clear: both;}
+    & li {
+      width: 25%;
+      // height: 220px;
+      padding: 1%;
+      float: left;
+      text-align: center;
+      & .content-wrapper {
+        border: 1px solid @line-color;
+        display: block;
+        height: 100%;
+        background: #fff;
+        border-radius: 6px;
+        padding: 10px;
+        text-align: center;
+        // height: 220px;
+        position: relative;
+        overflow: hidden;
+        .page-pro();
+        transition: box-shadow .3s @ease-out, transform .3s @ease-out;
+        & > span {
+          height: 100%;
+          display: block;
+          background: @line-color;
+          padding: 5%;
+
+          img{width: 100%;max-width: 100px;}
+        }
+        & p {
+          position: absolute;
+          width: 100%;
+          background: transparent;
+          left: 0;
+          bottom: -30px;
+          height: 30px;
+          line-height: 30px;
+          color: #fff;
+          transition: bottom .3s @ease-out, background .3s @ease-out;
+        }
+        &:hover {
+          & p {
+            bottom: 0;
+            background: fade(@primary-color, 75);
+          }
+        }
+      }
+    }
+  }
+}

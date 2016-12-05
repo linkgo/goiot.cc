@@ -1,0 +1,20 @@
+.content5-wrap{width: 100%; height: 100%;
+}
+.content5-left{
+	h1{font-size: 32px; font-weight: normal; color: #404040;}
+	p{margin-top: 10px;}
+	ul{margin-top: 15%; min-height: 300px;}
+	li{margin-top: 8%; position: relative; list-style: none;
+		// span{display: inline-block; width: 30px; height: 30px; position: absolute;}
+	}
+}
+.left-table{display: table; width: 100%;}
+.left-table-cell{display: table-cell; vertical-align: top;
+	&:first-child{width: 13%; padding-right: 5%; min-width: 60px;}
+	&:last-child{width: 80%;}
+}
+.content5-right, .content5-left{padding: 10%;}
+@media(min-width: 768px){
+	.content5-table{display: table; height: 100%;}
+	.content5-left, .content5-right{display: table-cell; vertical-align: middle;}
+}
