@@ -5,7 +5,6 @@ import TweenOne from 'rc-tween-one';
 import styles from './Nav.less';
 const Item = Menu.Item;
 
-let logoSrc = require('../../img/goiot-rc3-132x33.white.png')
 
 // class Nav extends Component {
 
