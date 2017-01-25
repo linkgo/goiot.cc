@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'dva';
 
-import '../less/common.less';
+import '../components/home-grid/common.less';
 import Nav from '../components/home-grid/Nav';
 import Banner from '../components/home-grid/Banner';
 import Content5 from '../components/home-grid/Content5';

@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { Row, Col, Menu } from 'antd';
 import TweenOne from 'rc-tween-one';
 
-import styles from './Nav.less';
+import styles from './nav.less';
 const Item = Menu.Item;
 
 

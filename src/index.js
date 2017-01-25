@@ -6,10 +6,6 @@ import { browserHistory } from 'dva/router';
 // 1. Initialize
 const app = dva({
   initialState: {
-    products: [
-      { name: 'dva', id: 1 },
-      { name: 'antd', id: 2 },
-    ],
   },
   history: browserHistory,
 });
@@ -18,8 +14,6 @@ const app = dva({
 //app.use({});
 
 // 3. Model
-app.model(require('./models/products'));
-app.model(require('./models/homeMotion'));
 app.model(require('./models/homeGrid'));
 
 // 4. Router
