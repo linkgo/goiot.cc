@@ -1,38 +1,40 @@
 @import './custom.less';
-.footer-wrap{
-	width: 100%; 
-	height: auto;
-	padding: 40px 0;
-	background: @template-bg-color;
-	.logo {
+.footer-wrap {
+  width: 100%;
+  height: auto;
+  padding: 40px 0;
+  background: @template-bg-color;
+  .logo {
     width: 80%;
     max-width: 150px;
-	}
+  }
 
-	.footer-list{
-		h2{
-			font-weight: normal;
-	    color: #CCC;
-	    margin-bottom: 20px;
-		}
-		a{
-			color: #666;
-			&:hover{
-				color: @template-text-color;
-			}
-		}
-		.icon{
-			width: 20px;
-			display: inline-block;
-			margin-right: 10px;
-		}
-		@media (max-width: 768px){
-			.icon{display: block;}
-		}
-	}
-	.copyright{
-		width: 100%;
-		text-align: center;
-		margin-top: 80px;
-	}
+  .footer-list {
+    h2 {
+      font-weight: normal;
+      color: #CCC;
+      margin-bottom: 20px;
+    }
+    a {
+      color: #666;
+      &:hover {
+        color: @template-text-color;
+      }
+    }
+    .icon {
+      width: 20px;
+      display: inline-block;
+      margin-right: 10px;
+    }
+    @media (max-width: 768px) {
+      .icon {
+        display: block;
+      }
+    }
+  }
+  .copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 80px;
+  }
 }
