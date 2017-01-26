@@ -211,7 +211,7 @@ export default {
           contentLink:'#\n#\n#\n#',
         },
         copyright: {
-          cntent:'Copyright © 2016 Made with <span style=\"color: #a51616\">&hearts;</span> by <a href=\'linkgo.io\'>linkgo.io</a>. All Rights Reserved<br><a style=\'text-decoration:none;color:#666;\' href=\'http://www.miitbeian.gov.cn\'>沪ICP备16024899号</a>',
+          content:'Copyright © 2016 Made with <span style=\"color: #a51616\">&hearts;</span> by <a href=\'linkgo.io\'>linkgo.io</a>. All Rights Reserved<br><a style=\'text-decoration:none;color:#666;\' href=\'http://www.miitbeian.gov.cn\'>沪ICP备16024899号</a>',
         },
       },
     },

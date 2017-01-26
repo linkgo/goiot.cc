@@ -24,7 +24,7 @@ function Nav(props) {
       </Col>
       <Col
         xs={{ span: 24 }}
-        st={{ span: 8, offset: 10 }}>
+        sm={{ span: 8, offset: 10 }}>
         <TweenOne animation={{ ...animation, x: 30 }}>
           <Row>
             <Col xs={{ span: 6 }}>
