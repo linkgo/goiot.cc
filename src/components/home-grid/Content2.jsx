@@ -37,7 +37,7 @@ function Content2(props) {
           <QueueAnim
             className="content2-list-cell"
             delay={100}
-            leaveReverse="leaveReverse"
+            leaveReverse
             key="text">
             <h2 key="h2">{item.title}</h2>
             <p key="p">{item.content}</p>

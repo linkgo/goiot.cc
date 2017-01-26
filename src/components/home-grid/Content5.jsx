@@ -38,7 +38,7 @@ function content5(props) {
             className="content5-left"
             key="text"
             type="left"
-            leaveReverse="leaveReverse"
+            leaveReverse
             ease={['easeOutCubic', 'easeInCubic']}>
             <h1 key="h1">{title.title}</h1>
             <p key="p">{title.content}</p>
