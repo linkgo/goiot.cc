@@ -4,9 +4,14 @@
   height: auto;
   padding: 40px 0;
   background: @template-bg-color;
-  .logo {
-    width: 80%;
-    max-width: 150px;
+  .footer-logo {
+    .logo {
+      width: 80%;
+      max-width: 150px;
+    }
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   .footer-list {
@@ -24,12 +29,7 @@
     .icon {
       width: 20px;
       display: inline-block;
-      margin-right: 10px;
-    }
-    @media (max-width: 768px) {
-      .icon {
-        display: block;
-      }
+      margin: 3px;
     }
   }
   .copyright {

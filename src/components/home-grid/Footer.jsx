@@ -61,7 +61,7 @@ function footer(props) {
         'height' : '279px'
       }}>
       <Row type="flex" justify="space-around" align="top" className="footer-wrap">
-        <Col span={4} key="footer1">
+        <Col span={4} key="footer1" className="footer-logo">
           <p className="logo"><img src={logoContent.logo} width="100%"/></p>
           <p>{logoContent.content}</p>
         </Col>
