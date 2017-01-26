@@ -17,14 +17,14 @@ function Nav(props) {
   return (
 
     <Row className="nav-wrap">
-      <Col xs={{ span: 24 }} sm={{ span: 5 }}>
+      <Col xs={{ span: 24 }} sm={{ span: 4 }}>
         <TweenOne className="logo-wrap" animation={animation}>
           <img className="logo" src={logo}/>
         </TweenOne>
       </Col>
       <Col
         xs={{ span: 24 }}
-        sm={{ span: 12, offset: 5 }}>
+        st={{ span: 8, offset: 10 }}>
         <TweenOne animation={{ ...animation, x: 30 }}>
           <Row>
             <Col xs={{ span: 6 }}>
