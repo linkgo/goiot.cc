@@ -5,7 +5,7 @@ import './common.less';
 function customOverPack(props) {
   let clsName = props.className
     ? 'main-wrap ' + props.className
-    : 'main-wrap'
+    : 'main-wrap';
   return (
     <OverPack
       hideProps={{

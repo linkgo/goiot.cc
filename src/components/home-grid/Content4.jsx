@@ -29,6 +29,7 @@ function content4(props) {
   };
   return (
     <CustomOverPack
+      id="explore"
       hideProps={{
         h1: {
           reverse: true
@@ -36,7 +37,8 @@ function content4(props) {
         p: {
           reverse: true
         }
-      }}>
+      }}
+    >
       <Row className="content4-wrap">
         <Col xs={{
             span: 24

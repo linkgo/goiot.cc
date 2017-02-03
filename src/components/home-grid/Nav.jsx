@@ -1,9 +1,11 @@
 import React, {Component, PropTypes} from 'react';
 import {Col, Menu, Row} from 'antd';
 import TweenOne from 'rc-tween-one';
+import ScrollAnim from 'rc-scroll-anim';
 
 import styles from './nav.less';
 const Item = Menu.Item;
+const Link = ScrollAnim.Link;
 
 function Nav(props) {
   const {logo, menu1, menu2, menu3, menu4} = props.dataSource.block1;
@@ -28,23 +30,21 @@ function Nav(props) {
         <TweenOne animation={{ ...animation, x: 30 }}>
           <Row>
             <Col xs={{ span: 6 }}>
-              <span className="nav-item">{menu1}</span>
+              <span className="nav-item"><Link to="why">{menu1}</Link></span>
             </Col>
             <Col xs={{ span: 6 }}>
-              <span className="nav-item">{menu2}</span>
+              <span className="nav-item"><Link to="features">{menu2}</Link></span>
             </Col>
             <Col xs={{ span: 6 }}>
-              <span className="nav-item">{menu3}</span>
+              <span className="nav-item"><Link to="explore">{menu3}</Link></span>
             </Col>
             <Col xs={{ span: 6 }}>
-              <span className="nav-item">{menu4}</span>
+              <span className="nav-item-disabled">{menu4}</span>
             </Col>
           </Row>
         </TweenOne>
       </Col>
-
     </Row>
-  // </TweenOne>
   )
 
 }

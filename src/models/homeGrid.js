@@ -149,38 +149,6 @@ export default {
         },
       },
     },
-    content_6: {
-      style: {
-        height: '100%',
-      },
-      dataSource: {
-        title: {
-          title:'蚂蚁金融云提供专业的服务',
-          content:'科技想象力，金融创造力',
-        },
-        block0: {
-          tag:'PHONE',
-          icon:'https://zos.alipayobjects.com/rmsportal/XnzcslQvRoBHMHd.svg',
-          contentTitle:'技术\n融合\n开放',
-          content:'丰富的技术组件，简单组装即可快速搭建金融级应用，丰富的技术组件，简单组装即可快速搭建金融级应用。\n解放业务及技术生产力，推动金融服务底层创新，推动金融服务底层创新。解放业务及技术生产力，推动金融服务底层创新。\n符合金融及要求的安全可靠、高可用、高性能的服务能力，符合金融及要求的安全可靠、高可用、高性能的服务能力。',
-          img:'https://zos.alipayobjects.com/rmsportal/xBrUaDROgtFBRRL.png',
-        },
-        block1: {
-          tag:'TABLET',
-          icon:'https://zos.alipayobjects.com/rmsportal/XnzcslQvRoBHMHd.svg',
-          contentTitle:'技术\n融合\n开放',
-          content:'丰富的技术组件，简单组装即可快速搭建金融级应用，丰富的技术组件，简单组装即可快速搭建金融级应用。\n解放业务及技术生产力，推动金融服务底层创新，推动金融服务底层创新。解放业务及技术生产力，推动金融服务底层创新。\n符合金融及要求的安全可靠、高可用、高性能的服务能力，符合金融及要求的安全可靠、高可用、高性能的服务能力。',
-          img:'https://zos.alipayobjects.com/rmsportal/xBrUaDROgtFBRRL.png',
-        },
-        block2: {
-          tag:'DESKTOP',
-          icon:'https://zos.alipayobjects.com/rmsportal/XnzcslQvRoBHMHd.svg',
-          contentTitle:'技术\n融合\n开放',
-          content:'丰富的技术组件，简单组装即可快速搭建金融级应用，丰富的技术组件，简单组装即可快速搭建金融级应用。\n解放业务及技术生产力，推动金融服务底层创新，推动金融服务底层创新。解放业务及技术生产力，推动金融服务底层创新。\n符合金融及要求的安全可靠、高可用、高性能的服务能力，符合金融及要求的安全可靠、高可用、高性能的服务能力。',
-          img:'https://zos.alipayobjects.com/rmsportal/xBrUaDROgtFBRRL.png',
-        },
-      },
-    },
     footer_1: {
       style: {
         height: '300px',
@@ -211,7 +179,7 @@ export default {
           contentLink:'#\n#\n#\n#',
         },
         copyright: {
-          content:'Copyright © 2016 Made with <span style=\"color: #a51616\">&hearts;</span> by <a href=\'linkgo.io\'>linkgo.io</a>. All Rights Reserved<br><a style=\'text-decoration:none;color:#666;\' href=\'http://www.miitbeian.gov.cn\'>沪ICP备16024899号</a>',
+          content:'Copyright © 2016 Made with <span style=\"color: #a51616\">&hearts;</span> by <a href=\'http://linkgo.io\'>linkgo.io</a>. All Rights Reserved<br><a style=\'text-decoration:none;color:#666;\' href=\'http://www.miitbeian.gov.cn\'>沪ICP备16024899号</a>',
         },
       },
     },

@@ -2,8 +2,11 @@ import React, {Component, PropTypes} from 'react';
 import {Col, Menu, Row} from 'antd';
 import TweenOne from 'rc-tween-one';
 import QueueAnim from 'rc-queue-anim';
+import ScrollAnim from 'rc-scroll-anim';
 import CustomOverPack from './CustomOverPack';
 import './content2.less';
+
+const Element = ScrollAnim.Element;
 
 function Content2(props) {
   const {title, content} = props.dataSource.title;
@@ -56,7 +59,7 @@ function Content2(props) {
         p: {
           reverse: true
         }
-      }}>
+      }} id="features">
       <Row className="content2-wrap">
         <Col xs={{ span: 24 }} className="title2">
           <TweenOne key="h1" animation={titleAnim} component="h1">

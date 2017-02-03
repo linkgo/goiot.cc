@@ -27,7 +27,7 @@ function content5(props) {
   const {title, img} = props.dataSource;
 
   return (
-    <CustomOverPack
+    <CustomOverPack id="why"
       hideProps={{ img: { reverse: true } }}>
       <Row className="content5-wrap">
         <Col
