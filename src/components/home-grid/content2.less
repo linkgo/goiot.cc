@@ -8,12 +8,16 @@
   }
   .title2 {
     h1 {
-      font-size: 32px;
+      @media (min-width: 768px) {
+        font-size: 32px;
+      }
       text-align: center;
       margin: 5% auto 2%;
     }
     p {
-      font-size: 12px;
+      @media (min-width: 768px) {
+        font-size: 14px;
+      }
       text-align: center;
     }
   }
@@ -27,6 +31,12 @@
   .content2-list-cell {
     display: table-cell;
     vertical-align: top;
+    p {
+      @media (min-width: 768px) {
+        font-size: 14px;
+      }
+      margin-top: 1em;
+    }
     &:first-child {
       width: 15%;
       padding-top: 8px;
@@ -39,7 +49,9 @@
     &:last-child {
       padding-left: 5%;
       h2 {
-        font-size: 30px;
+        @media (min-width: 768px) {
+          font-size: 30px;
+        }
       }
     }
   }
