@@ -32,6 +32,7 @@ export default {
           content1: '极速部署，释放你的创造力',
           content2: '大道至简，开启下一代互联网进化',
           button: '控制台',
+          buttonCommunity: '社区',
           bgImg: 'https://zos.alipayobjects.com/rmsportal/gGlUMYGEIvjDOOw.jpg',
         },
       },
@@ -113,39 +114,23 @@ export default {
       dataSource: {
         title: {
           title:'看看 Go.IoT 能做什么',
-          content:'准备好你的脑洞，和我们一起飞上云端',
+          content:'准备好你的脑洞，和我们一起遨游云端',
         },
         block1: {
           img:'https://t.alipayobjects.com/images/rmsweb/T11aVgXc4eXXXXXXXX.svg',
-          content:'ant design',
+          content:'敬请期待：私有云服务',
         },
         block2: {
           img:'https://os.alipayobjects.com/rmsportal/IwAqwmFOJJVHsBY.svg',
-          content:'ant motion',
+          content:'敬请期待：实时订阅',
         },
         block3: {
           img:'https://t.alipayobjects.com/images/rmsweb/T11aVgXc4eXXXXXXXX.svg',
-          content:'ant design',
+          content:'敬请期待：智能硬件',
         },
         block4: {
           img:'https://os.alipayobjects.com/rmsportal/IwAqwmFOJJVHsBY.svg',
-          content:'ant motion',
-        },
-        block5: {
-          img:'https://t.alipayobjects.com/images/rmsweb/T11aVgXc4eXXXXXXXX.svg',
-          content:'ant design',
-        },
-        block6: {
-          img:'https://os.alipayobjects.com/rmsportal/IwAqwmFOJJVHsBY.svg',
-          content:'ant motion',
-        },
-        block7: {
-          img:'https://t.alipayobjects.com/images/rmsweb/T11aVgXc4eXXXXXXXX.svg',
-          content:'ant design',
-        },
-        block8: {
-          img:'https://os.alipayobjects.com/rmsportal/IwAqwmFOJJVHsBY.svg',
-          content:'ant motion',
+          content:'敬请期待：Web 应用',
         },
       },
     },
@@ -161,22 +146,22 @@ export default {
         block1: {
           title:'产品',
           content:'产品更新记录\n快速入门\n参考指南',
-          contentLink:'#\n#\n#',
+          contentLink:'//bb.goiot.cc/categories\n//bb.goiot.cc/category/7/%E5%85%A5%E9%97%A8-tutorial\n//bb.goiot.cc/categories',
         },
         block2: {
           title:'关于',
           content:'FAQ\n联系我们',
-          contentLink:'#\n#',
+          contentLink:'https://bb.goiot.cc/category/4/%E5%8F%8D%E9%A6%88-faq\nmailto:hi@linkgo.io',
         },
         block3: {
           title:'资源',
           content:'社区\nNode-RED Website\nNode-RED @ Slack',
-          contentLink:'/#\nhttp://nodered.org\nhttp://node-red.slack.com',
+          contentLink:'//bb.goiot.cc\nhttp://nodered.org\nhttp://node-red.slack.com',
         },
         block4: {
           title:'关注',
           content:'https://zos.alipayobjects.com/rmsportal/IiCDSwhqYwQHLeU.svg\nhttps://zos.alipayobjects.com/rmsportal/AXtqVjTullNabao.svg\nhttps://zos.alipayobjects.com/rmsportal/fhJykUTtceAhYFz.svg\nhttps://zos.alipayobjects.com/rmsportal/IDZTVybHbaKmoEA.svg',
-          contentLink:'#\n#\n#\n#',
+          contentLink:'#\n//github.com/linkgo\n#\n#',
         },
         copyright: {
           content:'Copyright © 2016 Made with <span style=\"color: #a51616\">&hearts;</span> by <a href=\'http://linkgo.io\'>linkgo.io</a>. All Rights Reserved<br><a style=\'text-decoration:none;color:#666;\' href=\'http://www.miitbeian.gov.cn\'>沪ICP备16024899号</a>',

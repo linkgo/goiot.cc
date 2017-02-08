@@ -80,7 +80,13 @@
         &:hover {
           & p {
             bottom: 0;
-            background: fade(@primary-color, 75);
+            background: fade(@template-bg-color, 75);
+          }
+          & > span {
+            img {
+              -webkit-filter: blur(2px);
+              filter: blur(2px);
+            }
           }
         }
       }

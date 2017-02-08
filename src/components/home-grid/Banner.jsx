@@ -10,6 +10,7 @@ import styles from './banner.less';
 function Banner(props) {
   const {
     button,
+    buttonCommunity,
     bgImg,
     content1,
     content2,
@@ -51,13 +52,16 @@ function Banner(props) {
               <p key="content1">{content1}</p>
               <p key="content2">{content2}</p>
             </div>
-            <Button className="ctr-btn" type="ghost" key="button">
+            <Button className="ctr-btn" type="ghost" key="button" onClick={() => {window.location.href = '/dashboard'}}>
               {button}
               <span
                 style={{
                   fontSize: "8px",
                   color: "#a51616"
                 }}>&nbsp;alpha</span>
+            </Button>
+            <Button className="ctr-btn" type="ghost" key="buttonCommunity" onClick={() => {window.location.href = '//bb.goiot.cc'}}>
+              {buttonCommunity}
             </Button>
           </QueueAnim>
         </Col>
