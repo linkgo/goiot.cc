@@ -33,7 +33,7 @@ function Banner(props) {
       }}>
       <Row
         type="flex"
-        justify="space-around"
+        justify="center"
         align="middle"
         className="main-wrap banner-content">
         <Col span={12}>
