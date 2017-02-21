@@ -11,7 +11,7 @@ export default {
       },
       dataSource: {
         block1: {
-          logo: 'http://o7spigzvd.bkt.clouddn.com/goiot-rc3-132x33.white.png',
+          logo: 'images/goiot-rc3-132x33.white.png',
           menu1: '为什么使用',
           menu2: '特性',
           menu3: '探索',
@@ -26,8 +26,7 @@ export default {
       dataSource: {
         block1: {
           top: '35%',
-          //logo: 'http://o7spigzvd.bkt.clouddn.com/goiot-rc3-800x266-shadow.white.png',
-          logo: 'http://o7spigzvd.bkt.clouddn.com/goiot-rc3-800x259-shadow-all.white.png',
+          logo: 'images/goiot-rc3-800x259-shadow-all.white.png',
           title:'',
           content1: '极速部署，释放你的创造力',
           content2: '大道至简，开启下一代互联网进化',
@@ -47,7 +46,7 @@ export default {
           content:'基于强大的 Node-RED 以及蓬勃发展的 npm 生态系统',
         },
         img: {
-          img:'http://o7spigzvd.bkt.clouddn.com/page-1-picture-sketch.png',
+          img:'images/page-1-picture-sketch.png',
         },
         block1: {
           img:'https://zos.alipayobjects.com/rmsportal/NKBELAOuuKbofDD.png',
@@ -140,7 +139,7 @@ export default {
       },
       dataSource: {
         logo: {
-          logo:'http://o7spigzvd.bkt.clouddn.com/goiot-rc3-132x33.white.png',
+          logo:'images/goiot-rc3-132x33.white.png',
           content:'An efficient IoT solution',
         },
         block1: {
