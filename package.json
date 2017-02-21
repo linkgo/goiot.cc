@@ -12,7 +12,8 @@
     "rc-scroll-anim": "^0.6.2",
     "rc-tween-one": "~0.7.0",
     "react": "^15.1.0",
-    "react-dom": "^15.1.0"
+    "react-dom": "^15.1.0",
+    "react-particles-js": "^1.4.0"
   },
   "devDependencies": {
     "atool-build": "^0.8.0",
