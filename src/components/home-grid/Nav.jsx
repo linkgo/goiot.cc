@@ -1,5 +1,5 @@
 import React, {Component, PropTypes} from 'react';
-import {Col, Menu, Row} from 'antd';
+import {Col, Icon, Menu, Row} from 'antd';
 import TweenOne from 'rc-tween-one';
 import ScrollAnim from 'rc-scroll-anim';
 
@@ -30,16 +30,16 @@ function Nav(props) {
         <TweenOne animation={{ ...animation, x: 30 }}>
           <Row>
             <Col xs={{ span: 6 }}>
-              <span className="nav-item"><Link to="why">{menu1}</Link></span>
+              <span className="nav-item"><Link to="why"><Icon type="question-circle" /> {menu1}</Link></span>
             </Col>
             <Col xs={{ span: 6 }}>
-              <span className="nav-item"><Link to="features">{menu2}</Link></span>
+              <span className="nav-item"><Link to="features"><Icon type="star" /> {menu2}</Link></span>
             </Col>
             <Col xs={{ span: 6 }}>
-              <span className="nav-item"><Link to="explore">{menu3}</Link></span>
+              <span className="nav-item"><Link to="explore"><Icon type="cloud" /> {menu3}</Link></span>
             </Col>
             <Col xs={{ span: 6 }}>
-              <span className="nav-item-disabled">{menu4}</span>
+              <span className="nav-item-disabled"><Icon type="tag" /> {menu4}</span>
             </Col>
           </Row>
         </TweenOne>
