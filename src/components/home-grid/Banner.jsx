@@ -37,9 +37,9 @@ function Banner(props) {
       <Particles style={styles.particles} params={{
 				"particles": {
 					"number": {
-						"value": 20,
+						"value": 15,
 						"density": {
-							"enable": true,
+							"enable": false,
 							"value_area": 800
 						}
 					},
