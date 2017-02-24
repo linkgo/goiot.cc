@@ -154,8 +154,8 @@ export default {
         },
         block3: {
           title:'资源',
-          content:'社区\nNode-RED Website\nNode-RED @ Slack',
-          contentLink:'//bb.goiot.cc\nhttp://nodered.org\nhttp://node-red.slack.com',
+          content:'社区\nNode-RED',
+          contentLink:'//bb.goiot.cc\nhttp://nodered.org',
         },
         block4: {
           title:'关注',
