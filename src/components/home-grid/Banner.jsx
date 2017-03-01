@@ -175,7 +175,7 @@ function Banner(props) {
               <p key="content1">{content1}</p>
               <p key="content2">{content2}</p>
             </div>
-            <Button className="ctr-btn" type="ghost" key="button" onClick={() => {window.location.href = '/dashboard'}}>
+            <Button className="ctr-btn" type="ghost" key="button" onClick={() => {window.location.href = '/discovery'}}>
               {button}
               <span
                 style={{
