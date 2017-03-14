@@ -1,4 +1,6 @@
+const path = require('path');
 const webpack = require('atool-build/lib/webpack');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = function(webpackConfig, env) {
   webpackConfig.babel.plugins.push('transform-runtime');
@@ -19,6 +21,15 @@ module.exports = function(webpackConfig, env) {
   webpackConfig.plugins = webpackConfig.plugins.filter(function(plugin) {
     return !(plugin instanceof webpack.optimize.CommonsChunkPlugin);
   });
+  
+  // use copy-webpack-plugin
+  webpackConfig.plugins.push(new CopyWebpackPlugin([
+    {
+      from: path.resolve(__dirname, './src/images'),
+      to: 'images',
+      ignore: ['.*']
+    }
+  ]))
 
   // Support CSS Modules
   // Parse all less files as css module.
