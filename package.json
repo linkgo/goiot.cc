@@ -13,6 +13,7 @@
     "rc-tween-one": "~0.7.0",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
+    "react-fullpage": "^0.1.16",
     "react-particles-js": "^1.4.0"
   },
   "devDependencies": {

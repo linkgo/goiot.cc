@@ -50,38 +50,25 @@ function footer(props) {
   const logoContent = props.dataSource.logo;
   const {content} = props.dataSource.copyright;
   return (
-    <CustomOverPack
-      playScale={0.2}
-      hideProps={{
-        copyright: {
-          reverse: true
-        }
-      }}
+    <Row type="flex" justify="space-around" align="top" className="footer-wrap"
       style={{
-        'height' : '279px'
-      }}>
-      <Row type="flex" justify="space-around" align="top" className="footer-wrap">
-        <Col span={4} key="footer1" className="footer-logo">
-          <p className="logo"><img src={logoContent.logo} width="100%"/></p>
-          <p>{logoContent.content}</p>
-        </Col>
-        {getLiChildren()}
-        <Col span={24}>
-          <TweenOne
-            animation={{
-              y: '+=30',
-              opacity: 0,
-              type: 'from'
-            }}
-            key="copyright"
-            className="copyright">
-            <p dangerouslySetInnerHTML={{
-                __html: content
-              }}/>
-          </TweenOne>
-        </Col>
-      </Row>
-    </CustomOverPack>
+      'height' : '279px'
+      }}
+    >
+      <Col span={4} key="footer1" className="footer-logo">
+        <p className="logo"><img src={logoContent.logo} width="100%"/></p>
+        <p>{logoContent.content}</p>
+      </Col>
+      {getLiChildren()}
+      <Col span={24}>
+        <div
+          className="copyright">
+          <p style={{color: '#666'}} dangerouslySetInnerHTML={{
+              __html: content
+            }}/>
+        </div>
+      </Col>
+    </Row>
   )
 }
 

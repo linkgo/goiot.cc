@@ -28,62 +28,39 @@ function content4(props) {
     return {opacity: 0, type: 'from', delay, y: '+=30'};
   };
   return (
-    <CustomOverPack
-      id="explore"
-      hideProps={{
-        h1: {
-          reverse: true
-        },
-        p: {
-          reverse: true
-        }
-      }}
-    >
-      <Row className="content4-wrap">
-        <Col xs={{
-            span: 24
-          }} className="content4-title">
-          <TweenOne
-            animation={{
-              y: '+=30',
-              opacity: 0,
-              type: 'from'
-            }}
-            component="h1"
-            key="h1"
-            reverseDelay={300}>
-            {title}
-          </TweenOne>
-          <TweenOne
-            animation={{
-              y: '+=30',
-              opacity: 0,
-              type: 'from',
-              delay: 50
-            }}
-            component="p"
-            key="p"
-            reverseDelay={200}>
-            {content}
-          </TweenOne>
-        </Col>
-        <Col xs={{
-            span: 24
-          }}>
-          <TweenOneGroup
-            className="content4-list-wrapper"
-            component="ul"
-            key="ul"
-            enter={getEnterAnim}
-            leave={{
-              y: '+=30',
-              opacity: 0
-            }}>
-            {getChildrenToRender(props.dataSource)}
-          </TweenOneGroup>
-        </Col>
-      </Row>
-    </CustomOverPack>
+    <Row className="content4-wrap">
+      <Col xs={{
+          span: 24
+        }} className="content4-title">
+        <QueueAnim
+          key="text"
+          type="bottom"
+          leaveReverse
+          delay={300}
+          ease={['easeOutCubic', 'easeInCubic']}>
+          { props.activeSection == 3 ? [
+            <h1 key="h1">{ title }</h1>,
+            <p key="p">{ content }</p>
+          ] : null }
+        </QueueAnim>
+      </Col>
+      <Col xs={{
+          span: 24
+        }}>
+        <QueueAnim
+          className="content4-list-wrapper"
+          key="ul"
+          component="ul"
+          type="right"
+          delay={100}
+          leaveReverse
+          ease={['easeOutCubic', 'easeInCubic']}>
+          { props.activeSection == 3 ? 
+            getChildrenToRender(props.dataSource) : null }
+        </QueueAnim>
+        
+      </Col>
+    </Row>
   )
 }
 

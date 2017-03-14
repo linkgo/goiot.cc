@@ -4,6 +4,7 @@ export default {
   namespace: 'homeGrid',
 
   state: {
+    currentSection: 0,
     nav_1: {
       style: {
         position: 'absolute',
@@ -182,6 +183,11 @@ export default {
     fetch(state, action) {
       return { ...state, ...action.payload };
     },
+    // set currentSection
+    setCurrentSection(state, { currentSection }) {
+      console.log(currentSection)
+      return { ...state, currentSection: currentSection }
+    }
   },
 
 }
