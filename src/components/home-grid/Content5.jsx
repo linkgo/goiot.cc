@@ -1,12 +1,17 @@
 import React, {Component, PropTypes} from 'react';
+import { injectIntl } from 'react-intl';
 import {Col, Menu, Row} from 'antd';
 import TweenOne from 'rc-tween-one';
 import QueueAnim from 'rc-queue-anim';
 import CustomOverPack from './CustomOverPack';
 
 import './content5.less';
+import { defineMessagesForModule } from '../../locales';
+
+const messages = defineMessagesForModule('home');
 
 function content5(props) {
+  const { formatMessage } = props.intl;
   const getBlockChildren = data => Object
     .keys(data)
     .filter(key => key.match('block'))
@@ -67,4 +72,4 @@ function content5(props) {
   )
 }
 
-export default content5;
+export default injectIntl(content5);

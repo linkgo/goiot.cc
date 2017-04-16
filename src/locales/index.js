@@ -44,9 +44,12 @@ export function defineMessagesForModule(module) {
   var pre = "";
 
   var modA = module.split(".");
+
   Object.keys(msgs).map(function(msg, i) {
+
     var match = true;
     var msgA = msg.split(".");
+
     modA.forEach(function(sub, i) {
       if (sub !== msgA[i]) {
         match = false;

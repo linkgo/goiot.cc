@@ -1,12 +1,17 @@
 import React from 'react';
+import { injectIntl } from 'react-intl';
 import TweenOne from 'rc-tween-one';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 import QueueAnim from 'rc-queue-anim';
 import {Col, Menu, Row} from 'antd';
 import CustomOverPack from './CustomOverPack';
 import './footer.less';
+import { defineMessagesForModule } from '../../locales';
+
+const messages = defineMessagesForModule('home');
 
 function footer(props) {
+  const { formatMessage } = props.intl;
   const getLiChildren = () => Object
     .keys(props.dataSource)
     .filter(key => key.match('block'))
@@ -23,6 +28,7 @@ function footer(props) {
         .map((item, ii) => {
           const cItem = item.trim();
           const isImg = cItem.match(/\.(jpg|png|svg|bmp|jpeg)$/i);
+          
           return (
             <li className={isImg
                 ? 'icon'
@@ -31,7 +37,7 @@ function footer(props) {
                 {
                   isImg
                     ? <img src={cItem} width="100%"/>
-                    : cItem
+                    : formatMessage(messages[cItem])
                 }
               </a>
             </li>
@@ -39,7 +45,7 @@ function footer(props) {
         });
       return (
         <Col span={4} key={`footer${i}`} className="footer-list">
-          <h2>{data.title}</h2>
+          <h2>{ formatMessage(messages[data.title]) }</h2>
           <QueueAnim component="ul" type="bottom">
             {content}
           </QueueAnim>
@@ -85,4 +91,4 @@ function footer(props) {
   )
 }
 
-export default footer;
+export default injectIntl(footer);

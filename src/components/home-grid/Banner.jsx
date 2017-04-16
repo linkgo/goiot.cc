@@ -1,4 +1,5 @@
 import React, {Component, PropTypes} from 'react';
+import { injectIntl } from 'react-intl';
 import {Col, Menu, Row} from 'antd';
 import Button from 'antd/lib/button';
 import QueueAnim from 'rc-queue-anim';
@@ -7,8 +8,12 @@ import Icon from 'antd/lib/icon';
 import Particles from 'react-particles-js';
 import CustomOverPack from './CustomOverPack';
 import styles from './banner.less';
+import { defineMessagesForModule } from '../../locales';
+
+const messages = defineMessagesForModule('home');
 
 function Banner(props) {
+	const { formatMessage } = props.intl;
   const {
     button,
     buttonCommunity,
@@ -176,7 +181,7 @@ function Banner(props) {
               <p key="content2">{content2}</p>
             </div>
             <Button className="ctr-btn" type="ghost" key="button" onClick={() => {window.location.href = '/discovery'}}>
-              {button}
+              { formatMessage(messages.console) }
               <span
                 style={{
                   fontSize: "8px",
@@ -184,7 +189,7 @@ function Banner(props) {
                 }}>&nbsp;alpha</span>
             </Button>
             <Button className="ctr-btn" type="ghost" key="buttonCommunity" onClick={() => {window.location.href = '//bb.goiot.cc'}}>
-              {buttonCommunity}
+              { formatMessage(messages.community) }
             </Button>
           </QueueAnim>
         </Col>
@@ -196,4 +201,4 @@ function Banner(props) {
   )
 }
 
-export default Banner;
+export default injectIntl(Banner);

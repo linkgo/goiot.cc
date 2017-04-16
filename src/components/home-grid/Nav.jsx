@@ -1,4 +1,6 @@
 import React, {Component, PropTypes} from 'react';
+import { injectIntl, FormattedMessage } from 'react-intl';
+import { defineMessagesForModule } from '../../locales';
 import {Col, Icon, Menu, Row} from 'antd';
 import TweenOne from 'rc-tween-one';
 import ScrollAnim from 'rc-scroll-anim';
@@ -6,8 +8,11 @@ import ScrollAnim from 'rc-scroll-anim';
 import styles from './nav.less';
 const Item = Menu.Item;
 const Link = ScrollAnim.Link;
+const messages = defineMessagesForModule('home');
+
 
 function Nav(props) {
+  const { formatMessage } = props.intl;
   const {logo, menu1, menu2, menu3, menu4} = props.dataSource.block1;
   const animation = {
     delay  : 100,
@@ -30,16 +35,16 @@ function Nav(props) {
         <TweenOne animation={{ ...animation, x: 30 }}>
           <Row>
             <Col xs={{ span: 6 }}>
-              <span className="nav-item"><Link to="why"><Icon type="question-circle" /> {menu1}</Link></span>
+              <span className="nav-item"><Link to="why"><Icon type="question-circle" /> { formatMessage(messages.why) }</Link></span>
             </Col>
             <Col xs={{ span: 6 }}>
-              <span className="nav-item"><Link to="features"><Icon type="star" /> {menu2}</Link></span>
+              <span className="nav-item"><Link to="features"><Icon type="star" /> { formatMessage(messages.features) }</Link></span>
             </Col>
             <Col xs={{ span: 6 }}>
-              <span className="nav-item"><Link to="explore"><Icon type="cloud" /> {menu3}</Link></span>
+              <span className="nav-item"><Link to="explore"><Icon type="cloud" /> { formatMessage(messages.features) }</Link></span>
             </Col>
             <Col xs={{ span: 6 }}>
-              <span className="nav-item-disabled"><Icon type="tag" /> {menu4}</span>
+              <span className="nav-item-disabled"><Icon type="tag" /> { formatMessage(messages.price) }</span>
             </Col>
           </Row>
         </TweenOne>
@@ -49,4 +54,4 @@ function Nav(props) {
 
 }
 
-export default Nav;
+export default injectIntl(Nav);
