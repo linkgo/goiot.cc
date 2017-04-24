@@ -116,20 +116,20 @@ export default {
           content:'准备好你的脑洞，和我们一起遨游云端',
         },
         block1: {
-          img:'https://t.alipayobjects.com/images/rmsweb/T11aVgXc4eXXXXXXXX.svg',
-          content:'敬请期待：私有云服务',
+          img:'images/linkgo-logo-border-160x160.png',
+          content:'专有云服务',
         },
         block2: {
-          img:'https://os.alipayobjects.com/rmsportal/IwAqwmFOJJVHsBY.svg',
-          content:'敬请期待：实时订阅',
+          img:'images/subscribe-160x160.png',
+          content:'实时订阅',
         },
         block3: {
-          img:'https://t.alipayobjects.com/images/rmsweb/T11aVgXc4eXXXXXXXX.svg',
-          content:'敬请期待：智能硬件',
+          img:'images/arduino-160x160.png',
+          content:'智能硬件',
         },
         block4: {
-          img:'https://os.alipayobjects.com/rmsportal/IwAqwmFOJJVHsBY.svg',
-          content:'敬请期待：Web 应用',
+          img:'images/web-app2-160x160.png',
+          content:'Web 应用',
         },
       },
     },
